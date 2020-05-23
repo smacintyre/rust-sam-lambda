@@ -1,18 +1,21 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Rust hello world from SAM
+Description: Rust hello and goodbye from SAM
 
 Globals:
   Function:
     Runtime: provided
     Handler: rust.binary
-    Timeout: 3
-
+    CodeUri: .
+    Timeout: 10
 
 Resources:
   HelloFunction:
     Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: .
+    Metadata:
+      BuildMethod: makefile
+
+  GoodbyeFunction:
+    Type: AWS::Serverless::Function
     Metadata:
       BuildMethod: makefile
