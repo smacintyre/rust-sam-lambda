@@ -1,6 +1,9 @@
 # AWS SAM build directory
 .aws-sam
 
+# AWS SAM Deployment Config
+samconfig.toml
+
 # Created by https://www.gitignore.io/api/vim,rust,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=vim,rust,visualstudiocode
 
