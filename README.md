@@ -12,6 +12,7 @@
     - [Verify the installation](#verify-the-installation)
   - [Docker (Optional)](#docker-optional)
 - [A note about linking on macOS](#a-note-about-linking-on-macos)
+- [A note on debug and release builds](#a-note-on-debug-and-release-builds)
 - [A note about the GNU Make Standard Library](#a-note-about-the-gnu-make-standard-library)
 - [Running](#running)
   - [Building](#building)
@@ -129,6 +130,12 @@ So we have added a config file in the `.cargo` directory: `.cargo/config`
 [target.x86_64-unknown-linux-musl]
 linker = "x86_64-linux-musl-gcc"
 ```
+
+## A note on debug and release builds
+
+Currently this project is set to only do debug builds.
+In the future, I plan the ability to switch between build and debug.
+And, hopefully, add local debugging.
 
 ## A note about the GNU Make Standard Library
 
