@@ -9,13 +9,12 @@ Globals:
     CodeUri: .
     Timeout: 10
 
+Metadata:
+  BuildMethod: makefile
+
 Resources:
   HelloFunction:
     Type: AWS::Serverless::Function
-    Metadata:
-      BuildMethod: makefile
 
   GoodbyeFunction:
     Type: AWS::Serverless::Function
-    Metadata:
-      BuildMethod: makefile
