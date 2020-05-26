@@ -4,7 +4,7 @@
 - [Assumptions](#assumptions)
 - [Installing Prerequisits](#installing-prerequisits)
   - [Install Rust](#install-rust)
-  - [Install the musl libc tools](#install-the-musl-libc-tools)
+  - [Install musl libc tools](#install-musl-libc-tools)
     - [macOS](#macos)
     - [Linux](#linux)
   - [Install AWS SAM CLI](#install-aws-sam-cli)
@@ -45,7 +45,7 @@ And you should see outpup like:
 cargo 1.43.0 (2cbe9048e 2020-05-03)
 ```
 
-### Install the musl libc tools
+### Install musl libc tools
 
 [AWS Lambda](https://aws.amazon.com/lambda/) will run our function in an [Amazon Linux Environment](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html).
 So we will use [musl libc](https://musl.libc.org/) "libc" implementaiton so we can staticly link our binaries for running on Lambda.
@@ -85,7 +85,7 @@ sudo apt install musl-tools
 ### Install AWS SAM CLI
 
 We require SAM CLI v0.50+.
-The SAM CLI is installed via [Homebrew](https://brew.sh/) on macOS and Linux.
+The SAM CLI is installed via [Homebrew](https://brew.sh/) on both macOS and Linux.
 Please make sure those are installed and follow these instructions.
 For full installation details, please see the [offical docs](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
 
