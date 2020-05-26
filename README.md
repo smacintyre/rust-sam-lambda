@@ -68,12 +68,6 @@ Install musl-tools:
 brew install filosottile/musl-cross/musl-cross
 ```
 
-Finally, we need to create a symbolic link for musl-gcc to avoid some dependency issues:
-
-```bash
-ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
-```
-
 #### Linux
 
 Install the target for musl:
