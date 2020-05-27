@@ -1,3 +1,6 @@
+# Dummy file so make will only build docker-image when Dockerfile has changed
+docker-image
+
 # AWS SAM build directory
 .aws-sam
 
